@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>California House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>California House Price Prediction</h1>
+    <p>Enter the house details below</p>
+
+    <form id="predictionForm">
+
+        <input type="number" step="any" id="longitude"
+               placeholder="Longitude" required>
+
+        <input type="number" step="any" id="latitude"
+               placeholder="Latitude" required>
+
+        <input type="number" step="any" id="housing_median_age"
+               placeholder="Housing Median Age" required>
+
+        <input type="number" step="any" id="total_rooms"
+               placeholder="Total Rooms" required>
+
+        <input type="number" step="any" id="total_bedrooms"
+               placeholder="Total Bedrooms" required>
+
+        <input type="number" step="any" id="population"
+               placeholder="Population" required>
+
+        <input type="number" step="any" id="households"
+               placeholder="Households" required>
+
+        <input type="number" step="any" id="median_income"
+               placeholder="Median Income" required>
+
+        <select id="ocean_proximity">
+            <option value="INLAND">INLAND</option>
+            <option value="ISLAND">ISLAND</option>
+            <option value="NEAR BAY">NEAR BAY</option>
+            <option value="NEAR OCEAN">NEAR OCEAN</option>
+        </select>
+
+        <button type="submit">Predict Price</button>
+
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
